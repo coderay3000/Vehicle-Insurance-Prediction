@@ -28,9 +28,9 @@ list_of_files = [
     f"{project_name}/entity/s3_estimator.py",
     f"{project_name}/exception/__init__.py",
     f"{project_name}/logger/__init__.py",
-    f"{project_name}/pipline/__init__.py",
-    f"{project_name}/pipline/training_pipeline.py",
-    f"{project_name}/pipline/prediction_pipeline.py",
+    f"{project_name}/pipeline/__init__.py",
+    f"{project_name}/pipeline/training_pipeline.py",
+    f"{project_name}/pipeline/prediction_pipeline.py",
     f"{project_name}/utils/__init__.py",
     f"{project_name}/utils/main_utils.py",
     "app.py",
@@ -46,7 +46,7 @@ list_of_files = [
 
 
 for filepath in list_of_files:
-    filepath = Path(filepath)
+    filepath = Path(filepath) 
     filedir, filename = os.path.split(filepath)
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)

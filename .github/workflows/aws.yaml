@@ -4,7 +4,7 @@
    push:
     branches: [main]
 
-jobs:
+ jobs:
   Continuous-Integration:
     runs-on: ubuntu-latest
 
